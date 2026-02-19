@@ -1,0 +1,316 @@
+/* ============================
+   Reset Styles
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ============================
+   Body
+=========================== */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    scroll-behavior: smooth;
+    direction: rtl; /* لجعل النص من اليمين لليسار */
+}
+/* Navigation Bar */
+#main-nav {
+    background-color: #4b6cb7;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#main-nav ul li {
+    margin: 0 15px;
+}
+
+#main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: all 0.3s;
+    border-radius: 8px;
+}
+
+#main-nav ul li a:hover {
+    background-color: #182848;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #182848;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+footer a.footer-contact-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4b6cb7;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+footer a.footer-contact-link:hover {
+    background-color: #4b6cb7;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* قسم التواصل */
+#contact {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#contact h2 {
+    color: #4b6cb7;
+    margin-bottom: 20px;
+}
+
+#contact ul.contact-links {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul.contact-links li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#contact ul.contact-links li a {
+    color: #182848;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+#contact ul.contact-links li a:hover {
+    color: #4b6cb7;
+    transform: scale(1.05);
+}
+
+
+/* ============================
+   Welcome Message
+=========================== */
+#welcome-message {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.6s, opacity 0.6s;
+    opacity: 0; /* إخفاء الرسالة عند التحميل */
+    transform: translateY(50px); /* تحريك الرسالة من الأسفل */
+}
+
+/* ============================
+   Doctor Photo
+=========================== */
+#doctor-photo img {
+    display: block;
+    margin: 0 auto 30px auto;
+    border: 5px solid #4b6cb7;
+    border-radius: 15px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+#doctor-photo img:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* ============================
+   Section Titles
+=========================== */
+h2, h3 {
+    color: #4b6cb7;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ============================
+   Tables
+=========================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+table th {
+    background-color: #4b6cb7;
+    color: white;
+    font-weight: bold;
+}
+
+/* ============================
+   Lists
+=========================== */
+ul, ol {
+    margin: 15px 0 30px 40px;
+}
+
+/* ============================
+   Links
+=========================== */
+a {
+    color: #4b6cb7;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+a:hover {
+    color: #182848;
+    transform: scale(1.05);
+}
+
+/* ============================
+   Sections
+=========================== */
+section {
+    margin-bottom: 50px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.6s, box-shadow 0.6s, opacity 0.6s;
+    opacity: 0; /* إخفاء الأقسام عند التحميل */
+    transform: translateY(50px); /* تحريك الأقسام من الأسفل */
+}
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ============================
+   Video Grid (القنوات)
+=========================== */
+.video-grid {
+    display: flex;
+    justify-content: flex-end; /* لجعل الفيديوهات على اليمين */
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.video-box {
+    background-color: #f9f9f9;
+    border: 2px solid #4b6cb7;
+    border-radius: 15px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 170px;
+    border-radius: 12px;
+}
+
+.video-box p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #182848;
+}
+
+.video-box:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+#main-footer {
+    background-color: #182848;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+    margin-top: 50px;
+}
+
+#main-footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+#main-footer a {
+    color: #ff6a00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+#main-footer a:hover {
+    color: #4b6cb7;
+    transform: scale(1.1);
+}
+
+#main-footer .social-links {
+    margin-top: 15px;
+}
+
+#main-footer .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+/* ============================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    table, table th, table td {
+        font-size: 12px;
+    }
+    section {
+        padding: 15px;
+    }
+    .video-grid {
+        justify-content: center; /* وسط الفيديوهات للشاشات الصغيرة */
+    }
+    .video-box {
+        width: 90%;
+    }
+}
